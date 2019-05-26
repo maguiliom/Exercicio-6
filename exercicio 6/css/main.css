@@ -1,0 +1,73 @@
+* {
+    background-color: grey;
+  }
+  footer{
+    display:flex;
+  }
+  
+  
+  .marca{
+    width:180px;
+    height:0;
+    float:left;
+    margin:6px;
+    padding:25px;
+    text-align:left;
+    display:flex-end;
+  }
+  .searchbut{
+    background-color:black;
+    color:#FFFFFF;
+    cursor:pointer;
+    height:30px;
+    padding:3px;
+    margin-top:5px; 
+  }
+  
+  .contato{
+    width:180px;
+    height:0;
+    float:left;
+    margin:9px;
+    padding:5px;
+    display:flex-start;
+  }
+    
+  
+  .searchbut:hover{
+  background-color:red;  
+  }
+  .sobre{
+    
+    width:180px;
+    height:0;
+    float:left;
+    margin:5px;
+    padding:5px;
+    display:flex;
+  }
+  
+  @media (min-width: 768px) {   
+    .marca{
+    justify-content:flex;  
+     flex-flow:row wrap; 
+    }
+    
+    .sobre{
+      justify-content:flex-end;
+      flex-flow:row wrap; 
+    }
+    
+    .contato{
+      justify-content:flex-start;
+      flex-flow:row wrap; 
+    }
+  
+    .container{
+      flex-flow: row wrap;
+    }
+  
+    footer{
+      display:flex-end;
+      flex-flow: row-wrap;
+    }
